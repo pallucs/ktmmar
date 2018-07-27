@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- page title -->
+  <title>Heritage Nepal</title>
+
+  <!-- meta tags -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- css links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+  * {
+  box-sizing: border-box;
+}
+ 
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+  <div class="heritage-title">
+    <h2>KATHMANDU AR</h2>
+  </div>
+
+  
+  <!-- header starts -->
+  <!--<div class="topnav" id="myTopnav">
+    <ul>
+      <li><a  href="home.html">AR-View</a></li>
+      <li><a class="active" href="hello.html">All Heritage</a></li>
+      <li><a href="#HeritageNearby">Heritage Nearby</a></li>
+      <li><a href="#Setting">Setting</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myFunction1()">
+        <i class="fa fa-bars"></i>
+      </a></li>
+    </ul>
+  </div> -->
+
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        KATHMANDU AR
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a class="active" href="home11.html" target="_blank">AR-VIEW</a>
+      <a href="home.html" target="_blank">ALL HERITAGES</a>
+      <a href="home12.html" target="_blank">HERITAGE NEARBY</a>
+      <a href="home13.html" target="_blank">SETTING</a>
+      
+    </div>
+  </div>
+
+
+  <div class="row heritage1-card margin-tb">
+      <div class="col-md-4">
+          <div class="heritage1-image" id="myBtn1">
+              <!-- <h6 class="heritage1-link-info">Click For Full Size Image</h6> -->
+              <img src="dharahara.jpg" alt="dharahara">
+            </div>
+      </div>
+      <div class="col-md-4">
+          <h4>Dharahara</h4>
+          <p>Dharahara also called Bhimsen Tower, was a nine-storey, 61.88-metre-tall (203.0 ft) tower at the center of Sundhara in Kathmandu. It was built in 1832 by Mukhtiyar (equivalent to Prime Minister) Bhimsen Thapa under the commission of Queen Lalit Tripura Sundari and was a part of the architecture of Kathmandu recognized by UNESCO.
+    
+            The tower had a spiral staircase containing 213 steps. The eighth floor held a circular balcony for observers that provided a panoramic view of the Kathmandu valley. It also had a 5.2-metre (17 ft) bronze mast on the roof.
+    
+          Most of the tower collapsed in the 25 April 2015 Nepal earthquake, but the base remains. Sixty bodies were found in the rubble. Reconstruction of the tower commenced in June 2018.</p>
+      </div>
+      <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.541708465736!2d85.30976521470012!3d27.700556082794762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1854939daef1%3A0xdccdbbf1c295134f!2sDharahara+Tower!5e0!3m2!1sen!2snp!4v1532357688653" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+      </div>
+    </div>
+  
+    <div class="row heritage2-card  margin-tb">
+        <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.442009050743!2d85.32310561469941!3d27.67273048280631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c50daa2fb1%3A0x6f197fa38097b530!2sPatan+Durbar+Square!5e0!3m2!1sen!2snp!4v1532358612260" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>          
+        </div>
+        <div class="col-md-4">
+            <h4>Patan Durbar Square</h4>
+            <p>Patan Durbar Square is situated at the center of the city of Lalitpur in Nepal. It is one of the three Durbar Squares in the Kathmandu Valley, all of which are UNESCO World Heritage Sites. One of its attraction is the ancient royal palace where the Malla Kings of Lalitpur resided.
+      
+            The Durbar Square is a marvel of Newar architecture. The Square floor is tiled with red bricks. There are many temples and idols in the area. The main temples are aligned opposite of the western face of the palace. The entrance of the temples faces east, towards the palace. There is also a bell situated in the alignment beside the main temples. The Square also holds old Newari residential houses. There are various other temples and structures in and around Patan Durbar Square built by the Newa People.</p>
+          </div>
+        <div class="col-md-4">
+            <div class="heritage1-image" id="myBtn1">
+      <img src="patan.jpg" alt="dharahara"></div>
+          
+        </div>
+      </div>
+  
+      <div class="row heritage1-card margin-tb">
+          <div class="col-md-4">
+              <div class="heritage1-image" id="myBtn1">
+                  <!-- <h6 class="heritage1-link-info">Click For Full Size Image</h6> -->
+                  <img src="ktm.jpg" alt="dharahara"></div>
+          </div>
+          <div class="col-md-4"><h4>Kathmandu Durbar Square</h4>
+            <p>Kathmandu Durbar Square in front of the old royal palace of the former Kathmandu Kingdom is one of three Durbar (royal palace) Squares in the Kathmandu Valley in Nepal, all of which are UNESCO World Heritage Sites. Durbar Square was surrounded with spectacular architecture and vividly showcases the skills of the Newar artists and craftsmen over several centuries. The Royal Palace was originally at Dattaraya square and was later moved to the Durbar square.
+      
+            The Kathmandu Durbar Square held the palaces of the Malla and Shah kings who ruled over the city. Along with these palaces, the square surrounds quadrangles, revealing courtyards and temples. It is known as Hanuman Dhoka Durbar Square, a name derived from a statue of Hanuman, the monkey devotee of Lord Ram, at the entrance of the palace.</p>
+          </div>
+          <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.424214132977!2d85.30458961470022!3d27.704185582793144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18561aa35c89%3A0xcf3388483ba8f375!2sKathmandu+Durbar+Square!5e0!3m2!1sen!2snp!4v1532359894227" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+          </div>
+        </div>
+
+      <div class="row heritage2-card margin-tb">
+          <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.463227188048!2d85.42591361469941!3d27.672074382806457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1aafec32df31%3A0xdda339e731af9bfd!2sBhaktapur+Durbar+Square!5e0!3m2!1sen!2snp!4v1532360008411" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+          </div>
+          <div class="col-md-4"> <h4>Bhaktapur Durbar Square</h4>
+            <p>Bhaktapur Durbar Square is the plaza in front of the royal palace of the old Bhaktapur Kingdom, 1,400 metres (4,600 ft) above sea level. It is a UNESCO World Heritage Site. Many tourists attraction is toward the pachpann jhyale durbar
+      
+            The Bhaktapur Durbar Square is located in the current town of Bhaktapur, also known as Bhadgaon, which lies 13 km east of Kathmandu. While the complex consists of at least four distinct squares (Durbar Square, Taumadhi Square, Dattatreya Square and Pottery Square), the whole area is informally known as the Bhaktapur Durbar Square and is a highly visited site in the Kathmandu Valley</p>
+          </div>
+          <div class="col-md-4">
+              <div class="heritage2-image" id="myBtn2">
+                  <!-- <h6 class="heritage2-link-info">Click For Full Size Image</h6> -->
+                  <img src="bhaktapur.jpeg" alt="dharahara">
+                </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="heritage-footer">
+  <p>Developed By:</p>
+</div>
+
+
+
+  <!-- <div class="card">
+    <img src="dharahara.jpg" alt="Avatar" style="width:100% ; " >
+    <div class="container">
+      <h4><b>Dharahara</b>
+
+      </h4>
+      <img src="maps.png" alt="Avatar" style="width:40% ; padding-left:60%" onclick="myfunction()" >
+      <p>5 km </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="patan.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Patan Durbar Square</b><b></b></h4>
+      <img src="maps.png" alt="Avatar" style="width:40% ; padding-left:60%" onclick="myfunction()" >
+      <p>2 km </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="ktm.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Kathmandu Durbar Square</b><b></b></h4>
+      <p>Kathmandu Durbar Square (Basantapur Darbar Kshetra) in front of the old royal palace of the former Kathmandu Kingdom
+      is one of three Durbar (royal palace) Squares in the Kathmandu Valley in Nepal, all of which are UNESCO World Heritage Sites. </p>
+      <img src="maps.png" alt="Avatar" style="width:40% ; padding-left:60%" onclick="myfunction()" >
+      <p>2 km </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="bhaktapur.jpeg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>Bhaktapur Durbar Square</b><b></b></h4>
+      <img src="maps.png" alt="Avatar" style="width:40% ; padding-left:60%" onclick="myfunction()" >
+      <p>5 km </p>
+    </div>
+  </div> -->
+
+
+</body>
+
+<!-- script links -->
+<script type="text/javascript" src="js.js"></script>
+
+</html>

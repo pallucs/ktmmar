@@ -1,2 +1,2 @@
-# ktmmar
-this is a repo for my project
+# KathmanduAR
+Web prototype for our MIT GSL!
